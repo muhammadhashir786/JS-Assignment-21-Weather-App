@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background:
+    radial-gradient(circle at top left, #dbeafe, transparent 35%),
+    radial-gradient(circle at bottom right, #bfdbfe, transparent 35%),
+    linear-gradient(135deg, #eff6ff, #dbeafe);
+
+  color: #172033;
+}
+
+/* Main Card */
+
+#weather-card {
+  width: 100%;
+  max-width: 470px;
+
+  padding: 35px 32px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.12),
+    0 5px 15px rgba(15, 23, 42, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 25px;
+}
+
+/* Heading */
+
+h1 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 700;
+
+  color: #172033;
+
+  letter-spacing: -1px;
+}
+
+/* Form */
+
+form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* Input */
+
+input {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #d7deea;
+  border-radius: 12px;
+
+  outline: none;
+
+  background-color: #f8fafc;
+  color: #172033;
+
+  font-size: 16px;
+
+  transition: 0.25s ease;
+}
+
+input::placeholder {
+  color: #8a94a6;
+}
+
+input:focus {
+  background-color: white;
+
+  border-color: #3b82f6;
+
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+/* Button */
+
+button {
+  width: 100%;
+
+  padding: 13px 16px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.22);
+
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.28);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Weather List */
+
+ul {
+  width: 100%;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+/* Weather Items */
+
+ul li {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e8edf4;
+
+  color: #334155;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+/* First weather item */
+
+ul li:first-child {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+
+  border-color: #bfdbfe;
+
+  color: #1e40af;
+
+  font-weight: 600;
+}
+
+/* Weather icon */
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+
+  display: block;
+
+  margin: 0 auto 5px;
+}
+
+/* Temperature */
+
+.temperature {
+  text-align: center;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: #172033;
+}
+
+/* Condition */
+
+.condition {
+  text-align: center;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  color: #475569;
+}
+
+/* Error message */
+
+.error {
+  background: #fff1f2 !important;
+
+  border-color: #fecdd3 !important;
+
+  color: #be123c !important;
+
+  text-align: center;
+
+  font-weight: 600;
+}
+
+/* Loading */
+
+.loading {
+  text-align: center;
+
+  color: #64748b;
+
+  font-weight: 500;
+}
+
+/* Tablet */
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  #weather-card {
+    max-width: 450px;
+
+    padding: 30px 24px;
+
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  #weather-card {
+    padding: 25px 18px;
+
+    border-radius: 18px;
+
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  input,
+  button {
+    font-size: 15px;
+
+    padding: 12px;
+  }
+
+  ul li {
+    font-size: 14px;
+
+    padding: 11px 12px;
+  }
+
+  .temperature {
+    font-size: 36px;
+  }
+
+  .weather-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
