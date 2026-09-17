@@ -23,7 +23,7 @@ body {
   color: #172033;
 }
 
-/* Main Card */
+/* weather card */
 
 #weather-card {
   width: 100%;
@@ -47,8 +47,6 @@ body {
   gap: 25px;
 }
 
-/* Heading */
-
 h1 {
   margin: 0;
 
@@ -60,8 +58,7 @@ h1 {
   letter-spacing: -1px;
 }
 
-/* Form */
-
+/* form */
 form {
   width: 100%;
 
@@ -71,8 +68,7 @@ form {
   gap: 12px;
 }
 
-/* Input */
-
+/* input */
 input {
   width: 100%;
 
@@ -103,12 +99,11 @@ input:focus {
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
 }
 
-/* Button */
-
+/* button */
 button {
   width: 100%;
 
-  padding: 13px 16px;
+  padding: 14px 16px;
 
   border: none;
   border-radius: 12px;
@@ -138,7 +133,6 @@ button:active {
 }
 
 /* Weather List */
-
 ul {
   width: 100%;
 
@@ -240,6 +234,8 @@ ul li:first-child {
 
   font-weight: 500;
 }
+
+/* Responsive */
 
 /* Tablet */
 

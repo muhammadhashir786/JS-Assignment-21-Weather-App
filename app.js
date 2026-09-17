@@ -1,14 +1,18 @@
+// store API key in variable:
 const API_KEY = "5daee078985c4de2a7d185254261409";
 
+// function to run weather app:
 async function chkweather(event) {
   event.preventDefault();
 
+  // Element Selection:
   const input = document.querySelector("input");
   const weatherList = document.querySelector("ul");
 
+  // get input value:
   const city = input.value.trim();
 
-  // Check empty input
+  // check empty input:
   if (city === "") {
     weatherList.innerHTML = `
       <li class="error">
@@ -19,29 +23,37 @@ async function chkweather(event) {
     return;
   }
 
-  // Loading message
+  // show loading message
   weatherList.innerHTML = `
     <li class="loading">
       Checking weather...
     </li>
   `;
 
+  // try catch:
   try {
     const API_URL =
       `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${encodeURIComponent(city)}&aqi=yes`;
 
+    // fetch data from API:
     const response = await fetch(API_URL);
 
+    // convert raw data into json (object):
     const data = await response.json();
 
-    // API error
+    // API error/check response true/false:
     if (!response.ok) {
       throw new Error(data.error?.message || "Unable to find weather.");
     }
 
-    // Get weather information
+    // Get weather information:
+    // extract information from data variable:
+
+    // 2 main information in data variable:
     const location = data.location;
     const current = data.current;
+
+    // other information extract from "location" and "current"
 
     const cityName = location.name;
     const country = location.country;
@@ -63,7 +75,7 @@ async function chkweather(event) {
 
     const uv = current.uv;
 
-    // Show weather
+    // show extracted data on screen:
     weatherList.innerHTML = `
       <li>
         <img
@@ -117,8 +129,10 @@ async function chkweather(event) {
       </li>
     `;
   } catch (error) {
+    // print error on console:
     console.error(error);
 
+    // show error on screen:
     weatherList.innerHTML = `
       <li class="error">
         ${error.message}
