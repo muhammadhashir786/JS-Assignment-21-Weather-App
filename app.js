@@ -7,6 +7,7 @@ async function chkweather(event) {
 
   // Element Selection:
   const input = document.querySelector("input");
+  const button = document.querySelector("button");
   const weatherList = document.querySelector("ul");
 
   // get input value:
@@ -22,6 +23,10 @@ async function chkweather(event) {
 
     return;
   }
+
+  // disable button
+  button.disabled = true;
+  button.textContent = "Checking...";
 
   // show loading message
   weatherList.innerHTML = `
@@ -41,19 +46,20 @@ async function chkweather(event) {
     // convert raw data into json (object):
     const data = await response.json();
 
-    // API error/check response true/false:
+    // API error or check response true/false:
     if (!response.ok) {
       throw new Error(data.error?.message || "Unable to find weather.");
     }
 
     // Get weather information:
+
     // extract information from data variable:
 
-    // 2 main information in data variable:
+    // 2 main keys in data variable:
     const location = data.location;
     const current = data.current;
 
-    // other information extract from "location" and "current"
+    // other keys extract from "location" and "current"
 
     const cityName = location.name;
     const country = location.country;
@@ -138,5 +144,9 @@ async function chkweather(event) {
         ${error.message}
       </li>
     `;
+  } finally {
+    // re-enable button after request completes
+    button.disabled = false;
+    button.textContent = "Check Weather";
   }
 }
