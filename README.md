@@ -2,8 +2,8 @@
 
 A clean, responsive, and real-time **Weather Forecast Web Application** built with **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)** using the **WeatherAPI** service. Users can search any city worldwide to instantly view current temperature, weather conditions, and detailed atmospheric metrics.
 
-🔗 **Live Demo:** [muhammadhashir-weather-app.netlify.app](https://muhammadhashir-weather-app.netlify.app)  
-📂 **Repository:** [github.com/muhammadhashir786/JS-Assignment-21-Weather-App](https://github.com/muhammadhashir786/JS-Assignment-21-Weather-App)
+🔗 **Live Demo:** https://muhammadhashir-weather-app.netlify.app
+📂 **Repository:** https://github.com/muhammadhashir786/JS-Assignment-21-Weather-App
 
 ---
 
@@ -22,8 +22,8 @@ A clean, responsive, and real-time **Weather Forecast Web Application** built wi
 - **Structure:** HTML5 (Semantic & accessible form layout)
 - **Styling:** CSS3 (Flexbox, CSS gradients, custom states, responsive media queries)
 - **Logic & API Integration:** Vanilla JavaScript (ES6+, `async/await`, Fetch API, DOM Manipulation)
-- **Data Provider:** [WeatherAPI.com](https://www.weatherapi.com/)
-- **Deployment:** Netlify (Continuous Deployment via GitHub)
+- **Data Provider:** https://www.weatherapi.com/
+- **Deployment:** https://muhammadhashir-weather-app.netlify.app
 
 ---
 
@@ -60,5 +60,5 @@ JS-Assignment-21-Weather-App/
 
 **Muhammad Hashir**
 
-- GitHub: [@muhammadhashir786](https://github.com/muhammadhashir786)
-- Live Project: [muhammadhashir-weather-app.netlify.app](https://muhammadhashir-weather-app.netlify.app)
+- GitHub: https://github.com/muhammadhashir786
+- LinkedIn: https://www.linkedin.com/in/muhammad-hashir-dev
