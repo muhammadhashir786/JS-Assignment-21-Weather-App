@@ -2,10 +2,10 @@
 
 A clean, responsive, and real-time **Weather Forecast Web Application** built with **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)** using the **WeatherAPI** service. Users can search any city worldwide to instantly view current temperature, weather conditions, and detailed atmospheric metrics.
 
-- 🔗 **Live Demo:** https://muhammadhashir-weather-app.netlify.app
-- 📂 **Repository:** https://github.com/muhammadhashir786/JS-Assignment-21-Weather-App
+## 💻 Live Demo
 
----
+- 🔗 **Live Site:** https://muhammadhashir-weather-app.netlify.app
+- 📂 **Repository:** https://github.com/muhammadhashir786/JS-Assignment-21-Weather-App
 
 ## ✨ Features
 
@@ -15,8 +15,6 @@ A clean, responsive, and real-time **Weather Forecast Web Application** built wi
 - **Request State & Spam Prevention:** Disables the submit button with a `"Checking..."` loading state during active API calls (`try / catch / finally`) to prevent duplicate requests.
 - **Modern & Responsive UI:** Features a clean card-based layout with subtle border radii, soft gradient backgrounds, smooth hover/focus transitions, and full responsiveness across desktop, tablet (`≤600px`), and mobile (`≤400px`) viewports.
 
----
-
 ## 🛠️ Tech Stack
 
 - **Structure:** HTML5 (Semantic & accessible form layout)
@@ -24,8 +22,6 @@ A clean, responsive, and real-time **Weather Forecast Web Application** built wi
 - **Logic & API Integration:** Vanilla JavaScript (ES6+, `async/await`, Fetch API, DOM Manipulation)
 - **Data Provider:** https://www.weatherapi.com/
 - **Deployment:** https://muhammadhashir-weather-app.netlify.app
-
----
 
 ## 📁 Project Structure
 
@@ -36,8 +32,6 @@ JS-Assignment-21-Weather-App/
 ├── app.js          # API fetching, validation, and dynamic DOM rendering
 └── README.md       # Project documentation
 ```
-
----
 
 ## 🚀 Getting Started (Run Locally)
 
@@ -53,8 +47,6 @@ JS-Assignment-21-Weather-App/
    ```
 3. **Open in browser:**
    Open `index.html` directly in your browser or launch it using the **Live Server** extension in VS Code.
-
----
 
 ## 👨‍💻 Author
 
