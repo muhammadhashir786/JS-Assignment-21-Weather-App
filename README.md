@@ -2,8 +2,8 @@
 
 A clean, responsive, and real-time **Weather Forecast Web Application** built with **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)** using the **WeatherAPI** service. Users can search any city worldwide to instantly view current temperature, weather conditions, and detailed atmospheric metrics.
 
-🔗 **Live Demo:** https://muhammadhashir-weather-app.netlify.app
-📂 **Repository:** https://github.com/muhammadhashir786/JS-Assignment-21-Weather-App
+- 🔗 **Live Demo:** https://muhammadhashir-weather-app.netlify.app
+- 📂 **Repository:** https://github.com/muhammadhashir786/JS-Assignment-21-Weather-App
 
 ---
 
